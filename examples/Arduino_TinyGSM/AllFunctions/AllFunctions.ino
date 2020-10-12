@@ -32,8 +32,8 @@
 // #define TINY_GSM_TEST_CALL     true
 // #define TINY_GSM_TEST_SMS      true
 // #define TINY_GSM_TEST_USSD     true
-#define TINY_GSM_TEST_TEMPERATURE   true
-#define TINY_GSM_TEST_TIME          true
+// #define TINY_GSM_TEST_TEMPERATURE   true
+// #define TINY_GSM_TEST_TIME          true
 #define TINY_GSM_TEST_GPS           true
 // powerdown modem after tests
 #define TINY_GSM_POWERDOWN          true
@@ -76,14 +76,32 @@ void setup()
     SerialMon.begin(115200);
     delay(10);
 
+    // Set GSM module baud rate
+    SerialAT.begin(UART_BAUD, SERIAL_8N1, MODEM_RX, MODEM_TX);
+
+    /*
+    The indicator light of the board can be controlled
+    */
     pinMode(LED_PIN, OUTPUT);
     digitalWrite(LED_PIN, HIGH);
 
+    /*
+    MODEM_PWRKEY IO:4 The power-on signal of the modulator must be given to it,
+    otherwise the modulator will not reply when the command is sent
+    */
     pinMode(MODEM_PWRKEY, OUTPUT);
     digitalWrite(MODEM_PWRKEY, HIGH);
-    delay(300);
+    delay(300); //Need delay
     digitalWrite(MODEM_PWRKEY, LOW);
 
+    /*
+    MODEM_FLIGHT IO:25 Modulator flight mode control,
+    need to enable modulator, this pin must be set to high
+    */
+    pinMode(MODEM_FLIGHT, OUTPUT);
+    digitalWrite(MODEM_FLIGHT, HIGH);
+
+    //Initialize SDCard
     SPI.begin(SD_SCLK, SD_MISO, SD_MOSI, SD_CS);
     if (!SD.begin(SD_CS)) {
         Serial.println("SDCard MOUNT FAIL");
@@ -93,14 +111,7 @@ void setup()
         Serial.println(str);
     }
 
-    DBG("Wait...");
-    delay(6000);
-
-    // Set GSM module baud rate
-    SerialAT.begin(UART_BAUD, SERIAL_8N1, MODEM_RX, MODEM_TX);
-
     // Uncomment below will perform loopback test
-
     // while (1) {
     //     while (SerialMon.available()) {
     //         SerialAT.write(SerialMon.read());
@@ -125,12 +136,13 @@ void loop()
     // To skip it, call init() instead of restart()
     DBG("Initializing modem...");
     if (!modem.restart()) {
-        // if (!modem.init()) {
         DBG("Failed to restart modem, delaying 10s and retrying");
         // restart autobaud in case GSM just rebooted
         return;
     }
 
+
+#if TINY_GSM_TEST_GPRS
     /*  Preferred mode selection : AT+CNMP
           2 – Automatic
           13 – GSM Only
@@ -181,12 +193,10 @@ void loop()
     String modemInfo = modem.getModemInfo();
     DBG("Modem Info:", modemInfo);
 
-#if TINY_GSM_TEST_GPRS
     // Unlock your SIM card with a PIN if needed
     if (GSM_PIN && modem.getSimStatus() != 3) {
         modem.simUnlock(GSM_PIN);
     }
-#endif
 
     DBG("Waiting for network...");
     if (!modem.waitForNetwork(600000L)) {
@@ -197,6 +207,7 @@ void loop()
     if (modem.isNetworkConnected()) {
         DBG("Network connected");
     }
+#endif
 
 
 #if TINY_GSM_TEST_GPRS
@@ -385,7 +396,7 @@ void loop()
 #endif  //TEST_RING_RI_PIN
 
 
-#ifdef MODEM_DTR
+#ifdef MODEM_DTR1
 
     modem.sleepEnable();
 

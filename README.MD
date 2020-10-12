@@ -2,9 +2,9 @@
 
 <h2 align = "left">Product 📷:</h2>
 
-|        Examples        |  Product  Link   |    Schematic    | Status |
-| :--------------------: | :--------------: | :-------------: | :----: |
-| [Version (点击查看)]() | [Product link]() | [New Version]() |   ✅    |
+|  Examples   |  Product  Link   |    Schematic    | Status |
+| :---------: | :--------------: | :-------------: | :----: |
+| [Version]() | [Product link]() | [New Version]() |   ✅    |
 
 
 ## Notes for new Users
@@ -21,7 +21,11 @@
 
 6. When an SD card in you can not upload software in Arduino IDE since the SD card uses IO2 as CS, the SD card must be removed when uploading a new sketch. 
 
+7. There are two Type-C interfaces on the board, which are ESP32 download port and modem USB. On the back of the board, there are four switches for selection.
+    1. When using ESP32 programming, select as shown below
+        ![](schematic/TTL.png)
 
-
+        2.When using a modem to connect a computer to the Internet, select as shown below[Click here for connection method](docs/README.MD)
+            ![](schematic/USB.png)
 
 
