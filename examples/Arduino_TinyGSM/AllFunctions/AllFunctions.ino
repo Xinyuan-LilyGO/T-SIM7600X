@@ -163,7 +163,7 @@ void loop()
       */
     String ret;
     do {
-        ret = modem.setNetworkMode(13);
+        ret = modem.setNetworkMode(2);
         delay(500);
     } while (ret != "OK");
 
