@@ -34,3 +34,4 @@
 ![](image/SIM7600X_1.jpg)
 ![](image/SIM7600X_2.jpg)
 ![](image/SIM7600X_3.jpg)
+

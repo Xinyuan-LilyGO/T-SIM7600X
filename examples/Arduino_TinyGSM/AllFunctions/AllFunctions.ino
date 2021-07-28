@@ -19,7 +19,7 @@
 #define SerialAT Serial1
 
 // See all AT commands, if wanted
-// #define DUMP_AT_COMMANDS
+ #define DUMP_AT_COMMANDS
 
 // Define the serial console for debug prints, if needed
 #define TINY_GSM_DEBUG SerialMon
@@ -111,15 +111,17 @@ void setup()
         Serial.println(str);
     }
 
+
+
     // Uncomment below will perform loopback test
-    // while (1) {
-    //     while (SerialMon.available()) {
-    //         SerialAT.write(SerialMon.read());
-    //     }
-    //     while (SerialAT.available()) {
-    //         SerialMon.write(SerialAT.read());
-    //     }
-    // }
+//     while (1) {
+//         while (SerialMon.available()) {
+//             SerialAT.write(SerialMon.read());
+//         }
+//         while (SerialAT.available()) {
+//             SerialMon.write(SerialAT.read());
+//         }
+//     }
 }
 
 void light_sleep(uint32_t sec )
@@ -132,15 +134,22 @@ void loop()
 {
     bool res ;
 
-    // Restart takes quite some time
+        // Restart takes quite some time
     // To skip it, call init() instead of restart()
     DBG("Initializing modem...");
-    if (!modem.restart()) {
+    if (!modem.init()) {
         DBG("Failed to restart modem, delaying 10s and retrying");
-        // restart autobaud in case GSM just rebooted
         return;
     }
-
+//    
+//    // Restart takes quite some time
+//    // To skip it, call init() instead of restart()
+//    DBG("Initializing modem...");
+//    if (!modem.restart()) {
+//        DBG("Failed to restart modem, delaying 10s and retrying");
+//        // restart autobaud in case GSM just rebooted
+//        return;
+//    }
 
 #if TINY_GSM_TEST_GPRS
     /*  Preferred mode selection : AT+CNMP
@@ -162,10 +171,12 @@ void loop()
           54 – WCDMA+LTE Only
       */
     String ret;
-    do {
-        ret = modem.setNetworkMode(2);
-        delay(500);
-    } while (ret != "OK");
+//    do {
+//        ret = modem.setNetworkMode(2);
+//        delay(500);
+//    } while (ret != "OK");
+        ret= modem.setNetworkMode(2);
+        DBG("setNetworkMode:", ret);
 
 
     //https://github.com/vshymanskyy/TinyGSM/pull/405
