@@ -1,6 +1,6 @@
 <h1 align = "center">LilyGO T-SIM7600 Cayenne</h1>
 
-💦 ☀💨🌹 The sample code is based on the **[LilyGO T-SIM7600](https://www.aliexpress.com/item/4000542688096.html)** board, which takes the data of the external BMP180 sensor and uploads it to **[Cayenne](https://cayenne.mydevices.com/)**.
+💦 ☀💨🌹 The sample code is based on the **[LilyGO T-SIM7600](https://www.aliexpress.com/item/1005001705250713.html)** board, which takes the data of the external BMP180 sensor and uploads it to **[Cayenne](https://cayenne.mydevices.com/)**.
 
 ![](../../image/cayenne.png)
 

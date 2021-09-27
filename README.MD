@@ -2,9 +2,9 @@
 
 <h2 align = "left">Product 📷:</h2>
 
-|  Examples   |  Product  Link   |    Schematic    | Status |
-| :---------: | :--------------: | :-------------: | :----: |
-| [Version]() | [Product link]() | [New Version]() |   ✅    |
+|  Examples   |                             Product  Link                             |    Schematic    | Status |
+| :---------: | :-------------------------------------------------------------------: | :-------------: | :----: |
+| [Version]() | [Product link](https://www.aliexpress.com/item/1005001705250713.html) | [New Version]() |   ✅    |
 
 
 ## Notes for new Users
