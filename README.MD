@@ -2,9 +2,9 @@
 
 <h2 align = "left">Product 📷:</h2>
 
-|   Product   |                             Product  Link                             |               Schematic                | Status |
-| :---------: | :-------------------------------------------------------------------: | :------------------------------------: | :----: |
-| T -SIM7600X | [Product link](https://www.aliexpress.com/item/1005001705250713.html) | [](schematic/T54_SIM7600_20201012.pdf) |   ✅    |
+|   Product   |                             Product  Link                             |                    Schematic                    | Status |
+| :---------: | :-------------------------------------------------------------------: | :---------------------------------------------: | :----: |
+| T -SIM7600X | [Product link](https://www.aliexpress.com/item/1005001705250713.html) | [Schematic](schematic/T54_SIM7600_20201012.pdf) |   ✅    |
 
 
 ## Notes for new Users
