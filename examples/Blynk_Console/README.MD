@@ -13,11 +13,11 @@
 
 3. Create a new template or use an existing template (The name can be customized)
 
-![](../../image/Blynk/1-Create_Template-SIM7000.png)
+![](../../image/Blynk/1-Create_Template-SIM7600.png)
 
 4.   When the Template is ready, go to Search -> Devices - Create New Device
 
-![](../../image/Blynk/2-Create_device-SIM7000.png)
+![](../../image/Blynk/2-Create_device-SIM7600.png)
 
 5. Configuration module
 
