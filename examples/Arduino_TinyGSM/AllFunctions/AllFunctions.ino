@@ -442,7 +442,7 @@ void loop()
 
   SerialMon.printf("End of tests. Enable deep sleep , Will wake up in %d seconds", TIME_TO_SLEEP);
 
-  //Wait moden power off
+  // Wait for modem to power off
   light_sleep(5);
 
   esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
