@@ -67,24 +67,44 @@ void modem_on() {
     digitalWrite(MODEM_FLIGHT, HIGH);
 
     
-  int i = 10;
-  Serial.println("\nTesting Modem Response...\n");
-  Serial.println("****");
+  int i = 40;
+  Serial.print(F("\r\n# Startup #\r\n"));
+  Serial.print(F("# Sending \"AT\" to Modem. Waiting for Response\r\n# "));
   while (i) {
-    SerialAT.println("AT");
+    SerialAT.println(F("AT"));
+
+    // Show the User: we are doing something.
+    Serial.print(F("."));
     delay(500);
+
+    // Did the Modem send something?
     if (SerialAT.available()) {
       String r = SerialAT.readString();
-      Serial.println(r);
+      Serial.print("\r\n# Response:\r\n" + r);
       if ( r.indexOf("OK") >= 0 ) {
         reply = true;
         break;;
+      } else {
+        Serial.print(F("\r\n# "));
       }
+    }
+
+    // Did the User try to send something? Maybe he did not receive the first messages yet. Inform the User what is happening
+    if (Serial.available() && !reply) {
+      Serial.read();
+      Serial.print(F("\r\n# Modem is not yet online."));
+      Serial.print(F("\r\n# Sending \"AT\" to Modem. Waiting for Response\r\n# "));
+    }
+
+    // On the 5th try: Inform the User what is happening
+    if(i == 35) {
+      Serial.print(F("\r\n# Modem did not yet answer. Probably Power loss?\r\n"));
+      Serial.print(F("# Sending \"AT\" to Modem. Waiting for Response\r\n# "));
     }
     delay(500);
     i--;
   }
-  Serial.println("****\n");
+  Serial.println(F("#\r\n"));
 }
 
 void setup() {
@@ -101,6 +121,9 @@ void setup() {
     Serial.println(F(" DISCLAIMER: Entering AT commands without knowing what they do"));
     Serial.println(F(" can have undesired consiquinces..."));
     Serial.println(F("***********************************************************\n"));
+
+    // Uncomment to read received SMS
+    //SerialAT.println("AT+CMGL=\"ALL\"");
   } else {
     Serial.println(F("***********************************************************"));
     Serial.println(F(" Failed to connect to the modem! Check the baud and try again."));
@@ -109,14 +132,11 @@ void setup() {
 }
 
 void loop() {
-  while (true) {
-    if (SerialAT.available()) {
-      Serial.write(SerialAT.read());
-    }
-    if (Serial.available()) {
-      SerialAT.write(Serial.read());
-    }
-    delay(1);
+  if (SerialAT.available()) {
+    Serial.write(SerialAT.read());
   }
-
+  if (Serial.available()) {
+    SerialAT.write(Serial.read());
+  }
+  delay(1);
 }
