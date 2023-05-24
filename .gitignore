@@ -7,7 +7,6 @@ test
 .vscode
 lib
 .travis.yml
-*.ini
 src
 
 
