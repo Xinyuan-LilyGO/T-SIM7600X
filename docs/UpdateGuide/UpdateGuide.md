@@ -10,6 +10,8 @@
 ####  2. Switch USB input to Modem
 
 1. Turn the DIP switch on the back of the USB to the position shown in the figure below
+
+
    <img  height="320" width="240" src=../../image/USB.png>
 
 2. Connect the USBC to the modem interface
