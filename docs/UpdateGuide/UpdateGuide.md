@@ -4,8 +4,8 @@
 
 ####  1. Download Driver & Tools
 
-[Windows USB Drivers]()
-[UpgrageFwTools]()
+[Windows USB Drivers](https://1drv.ms/u/s!AmbpOqVezk5drStp_hYVbG5qcaHo?e=E3p7xG)
+[UpgrageFwTools](https://1drv.ms/u/s!AmbpOqVezk5dsULM1jyhu4S--GpX?e=WNUdwx)
 
 ####  2. Switch USB input to Modem
 

@@ -28,9 +28,7 @@
     2. When using a modem to connect a computer to the Internet, select as shown below[Click here for connection method](docs/pc/README.MD)
     <img  height="320" width="240" src=image/USB.png>
 
-## Resource
 
-[SIM7600X Driver](https://1drv.ms/u/s!AmbpOqVezk5drStp_hYVbG5qcaHo?e=E3p7xG)
 
 ## Features
 
