@@ -1,4 +1,4 @@
-<h1 align = "center">LilyGo SIM7600X</h1>
+<h1 align = "center">🌟LilyGo SIM7600X🌟</h1>
 
 <h2 align = "left">Product 📷:</h2>
 
@@ -23,14 +23,14 @@
 
 7. There are two Type-C interfaces on the board, which are ESP32 download port and modem USB. On the back of the board, there are four switches for selection.
     1. When using ESP32 programming, select as shown below
-        ![](schematic/TTL.png)
+    <img  height="320" width="240" src=image/TTL.png>
 
-        2.When using a modem to connect a computer to the Internet, select as shown below[Click here for connection method](docs/README.MD)
-            ![](schematic/USB.png)
+    2. When using a modem to connect a computer to the Internet, select as shown below[Click here for connection method](docs/pc/README.MD)
+    <img  height="320" width="240" src=image/USB.png>
 
 ## Resource
 
-![SIM7600X Driver](https://1drv.ms/u/s!AmbpOqVezk5drStp_hYVbG5qcaHo?e=E3p7xG)
+[SIM7600X Driver](https://1drv.ms/u/s!AmbpOqVezk5drStp_hYVbG5qcaHo?e=E3p7xG)
 
 ## Features
 
