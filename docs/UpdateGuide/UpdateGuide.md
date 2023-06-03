@@ -14,7 +14,9 @@
 
    <img  height="320" width="240" src=../../image/USB.png>
 
-2. Connect the USBC to the modem interface
+2. Connect the USBC to the modem interface , The `USB interface` in the image below
+
+   <img  height="290" width="640" src=../../image/update/step9.png>
 
 
 ###  3. Install driver 
@@ -32,7 +34,7 @@
 
 ###  4. Get current firmware version
 
-1. Upload [ATDebug_sketch](../examples/ATdebug/ATdebug.ino)，This step is to ensure that the modem starts normally
+1. Upload [ATDebug Sketch](../../examples/ATdebug/ATdebug.ino)，This step is to ensure that the modem starts normally
 
 2. Before upgrading, please send `AT+SIMCOMATI` to check the hardware version, Modem will brick if wrong version firmware is written
 
