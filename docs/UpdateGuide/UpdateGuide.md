@@ -1,11 +1,12 @@
 
 <h1 align = "center">🌟Modem Firmware Update Guide🌟</h1>
 
+[Youtube](https://youtu.be/7cJzjfcrFWY)
 
 ####  1. Download Driver & Tools
 
-[Windows USB Drivers](https://1drv.ms/u/s!AmbpOqVezk5drSuQMtGsXvJIYrhX?e=EMGq5o)
-[UpgrageFwTools](https://1drv.ms/u/s!AmbpOqVezk5dsULM1jyhu4S--GpX?e=WNUdwx)
+- [Windows USB Drivers](https://1drv.ms/u/s!AmbpOqVezk5drSuQMtGsXvJIYrhX?e=EMGq5o)
+- [UpgrageFwTools](https://1drv.ms/u/s!AmbpOqVezk5dsULM1jyhu4S--GpX?e=WNUdwx)
 
 ####  2. Switch USB input to Modem
 
