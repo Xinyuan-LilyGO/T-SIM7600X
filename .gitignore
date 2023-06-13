@@ -5,7 +5,6 @@
 .vscode/ipch
 test
 .vscode
-lib
 .travis.yml
 src
 
