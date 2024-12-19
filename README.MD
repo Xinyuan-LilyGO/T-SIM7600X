@@ -32,7 +32,7 @@
 
 9. If you need to make a voice call, you need to buy a SIM7600G with an audio decoder. You can check the red box in the figure below. If there is no chip here, there is no decoder version and the voice call function cannot be used.
 
-    1. The figure below shows a version without a decoder
+    1. The figure below shows a version without a decoder. If there is a chip here, you can solder the microphone to the MIC+ and MIC- pads and the speaker to the SPK pad.
     ![decoder](./image/decoder.jpg)
 
 
