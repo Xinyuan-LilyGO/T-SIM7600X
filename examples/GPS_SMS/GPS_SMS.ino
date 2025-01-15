@@ -97,7 +97,7 @@ void setup()
     // Check network registration status and network signal status
     int16_t sq ;
     Serial.print("Wait for the modem to register with the network.");
-    RegStatus status = REG_NO_RESULT;
+    SIM7600RegStatus status = REG_NO_RESULT;
     while (status == REG_NO_RESULT || status == REG_SEARCHING || status == REG_UNREGISTERED) {
         status = modem.getRegistrationStatus();
         switch (status) {
