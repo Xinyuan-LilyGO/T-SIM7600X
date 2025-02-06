@@ -34,7 +34,7 @@
 
     1. The figure below shows a version without a decoder. If there is a chip here, you can solder the microphone to the MIC+ and MIC- pads and the speaker to the SPK pad.
     ![decoder](./image/decoder.jpg)
-
+10. The SIM7600G solar charging chip has been updated to CN3165. The schematic diagram remains unchanged, but the CN3065 has been changed to CN3165. The input range is also 4.4V ~ 6V input voltage. The maximum USB/solar charging current is 500mA. The solar input power is not limited. It is recommended to use a 5V input solar panel, which cannot exceed 6V input voltage.
 
 ## Features
 
