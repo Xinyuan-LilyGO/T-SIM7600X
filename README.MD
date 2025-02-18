@@ -11,6 +11,7 @@
 |   Product   |                             Youtube  link                             |                  explanation                    | Status | 
 | :---------: | :-------------------------------------------------------------------: |:-----------------------------------------------:| :----: |
 | T -SIM7600X | [Youtube link](https://www.youtube.com/watch?v=ohgLGYYOW74) |    How to use the SIM7600X board     |   ✅    |
+| LilyGo device | [Youtube link](https://www.youtube.com/watch?v=f3BybP3L7ls) |    How to enter boot mode to download the firmware     |   ✅    |
 
 
 ## Notes for new Users
