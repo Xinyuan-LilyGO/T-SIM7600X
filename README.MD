@@ -6,6 +6,12 @@
 | :---------: | :-------------------------------------------------------------------: | :---------------------------------------------: | :----: |
 | T -SIM7600X | [Product link](https://www.aliexpress.com/item/1005001705250713.html) | [Schematic](schematic/T54_SIM7600_20201012.pdf) |   ✅    |
 
+## Use reference
+
+|   Product   |                             Youtube  link                             |                  explanation                    | Status | 
+| :---------: | :-------------------------------------------------------------------: |:-----------------------------------------------:| :----: |
+| T -SIM7600X | [Youtube link](https://www.youtube.com/watch?v=ohgLGYYOW74) |    How to use the SIM7600X board     |   ✅    |
+
 
 ## Notes for new Users
 
