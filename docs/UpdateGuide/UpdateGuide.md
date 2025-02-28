@@ -8,6 +8,13 @@
 - [Windows USB Drivers](https://1drv.ms/u/s!AmbpOqVezk5drSuQMtGsXvJIYrhX?e=EMGq5o)
 - [UpgrageFwTools](https://1drv.ms/u/s!AmbpOqVezk5dsULM1jyhu4S--GpX?e=WNUdwx)
 
+
+**The firmware version flashed must be consistent with the PN number of the demodulator, otherwise it will become a brick.**
+
+- [SIM7600G-H R2 P/N:S2-1097D-Z32W6 LE20B05SIM7600G22_240828](https://drive.google.com/file/d/11IUyfYEr5RutGMagW92EV3UlnWjOYeW5/view?usp=sharing)
+- [SIM7600G-H    P/N:S2-1097D-Z307J JLE20B03SIM7600M22](https://drive.google.com/file/d/11RRi8oIJKkH_XrOYSVGDl4XojPs5zYOM/view?usp=sharing)
+
+
 ####  2. Switch USB input to Modem
 
 1. Turn the DIP switch on the back of the USB to the position shown in the figure below
