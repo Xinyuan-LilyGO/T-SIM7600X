@@ -11,9 +11,9 @@
 
 **The firmware version flashed must be consistent with the PN number of the demodulator, otherwise it will become a brick.**
 
-- [SIM7600G-H R2 P/N:S2-1097D-Z32W6 LE20B05SIM7600G22_240828](https://drive.google.com/file/d/11IUyfYEr5RutGMagW92EV3UlnWjOYeW5/view?usp=sharing)
-- [SIM7600G-H    P/N:S2-1097D-Z307J JLE20B03SIM7600M22](https://drive.google.com/file/d/11RRi8oIJKkH_XrOYSVGDl4XojPs5zYOM/view?usp=sharing)
-
+- [SIMCOM-7600G-H PN:S2-1097D-Z307J](https://drive.google.com/drive/folders/11X8k4VuJJ5Pl46rudSzYXrpLkUKsXoaI?usp=sharing)
+- [SIMCOM-7600G-H PN:S2-1097D-Z31E3](https://drive.google.com/drive/folders/11YthuETFAIiLzhQ2mxGtca27JOckc2oP?usp=sharing)
+- [SIMCOM-7600G-H PN:S2-1097C-Z31FP](https://drive.google.com/drive/folders/11pfGCjkZFXo1AnTbNawqvSGudWjKn_26?usp=sharing)
 
 ####  2. Switch USB input to Modem
 
