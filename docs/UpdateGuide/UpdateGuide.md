@@ -14,6 +14,7 @@
 - [SIMCOM-7600G-H PN:S2-1097D-Z307J](https://drive.google.com/drive/folders/11X8k4VuJJ5Pl46rudSzYXrpLkUKsXoaI?usp=sharing)
 - [SIMCOM-7600G-H PN:S2-1097D-Z31E3](https://drive.google.com/drive/folders/11YthuETFAIiLzhQ2mxGtca27JOckc2oP?usp=sharing)
 - [SIMCOM-7600G-H PN:S2-1097C-Z31FP](https://drive.google.com/drive/folders/11pfGCjkZFXo1AnTbNawqvSGudWjKn_26?usp=sharing)
+- [SIMCOM-7600G-H PN:S2-1097D-Z32DY](https://drive.google.com/file/d/12BMSSGPISMhFEDvG7C9s34YvWg5PDNNb/view?usp=sharing)
 
 ####  2. Switch USB input to Modem
 
