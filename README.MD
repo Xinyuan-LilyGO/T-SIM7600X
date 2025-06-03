@@ -26,7 +26,7 @@
 
 5. Recommended solar panels are 4.4v to 6v **DO NOT EXCEED OR BOARD MAY BE DAMAGED** 
 
-6. When an SD card in you can not upload software in Arduino IDE since the SD card uses IO2 as CS, the SD card must be removed when uploading a new sketch. 
+6. When an SD card in you can not upload software in Arduino IDE since the SD card uses IO2 as MISO, the SD card must be removed when uploading a new sketch.
 
 7. If you need to use an external power adapter to power the SIM7600, you can connect the DC positive pole to the board **VBUS** Pin. The maximum input voltage is 5V. Do not exceed this voltage, otherwise the original circuit board will be burned.
 
