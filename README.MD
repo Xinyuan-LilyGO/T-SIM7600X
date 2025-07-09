@@ -2,6 +2,11 @@
 
 <h2 align = "left">Product 📷:</h2>
 
+# News
+
+* For more complete and rich examples, please visit the new repository [LilyGO-T-A76XX](https://github.com/Xinyuan-LilyGO/LilyGO-T-A76XX)
+
+
 |   Product   |                             Product  Link                             |                    Schematic                    | Status |
 | :---------: | :-------------------------------------------------------------------: | :---------------------------------------------: | :----: |
 | T -SIM7600X | [Product link](https://www.aliexpress.com/item/1005001705250713.html) | [Schematic](schematic/T54_SIM7600_20201012.pdf) |   ✅    |
